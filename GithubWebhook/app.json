@@ -1,5 +1,5 @@
 {
-    "name" : "Github仓库事件",
+    "name" : "OlivaGithub",
     "author" : "RainyZhou",
     "namespace" : "GithubWebhook",
     "priority" : 30000,

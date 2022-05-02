@@ -1,5 +1,5 @@
 import os
-import uuid
+import secrets
 import GithubWebhook
 import json
 
@@ -41,7 +41,7 @@ def get_access_tocken(path):
     file_path = path + GithubWebhook.data.file_access_tocken_path
     if not os.path.isfile(file_path):
         with open(file_path, "wt", encoding="utf-8") as file:
-            file.write(uuid.uuid4().hex)
+            file.write(str(secrets.token_urlsafe(48)))
     with open(file_path, "rt", encoding="utf-8") as file:
         access_tocken = file.read().strip()
     conf_dict["access_tocken"] = access_tocken

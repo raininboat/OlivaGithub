@@ -1,9 +1,12 @@
 import GithubWebhook
 
+PLUGIN_NAME = "OlivaGithub"
+
 default_conf = {
-    "port" : 6000,
+    "port" : 7000,
     "url_endpoint" : "/GithubWebhook/api",
-    "host_name" : "这里填写你的 ip 或者域名"
+    "host_name" : "这里填写你的 ip 或者域名",
+    "debug" : False,
 }
 
 file_dir_path = "/GithubWebhook"
